@@ -403,8 +403,40 @@
     </aside>
     <!-- End Sidebar -->
     <main id="main" class="main">
-		
-	</main>
+      <!-- card start -->
+      <div class="container" style="width: 50%">
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="mb-2">
+              <h5 class="card-title text-center pb-0 fs-4">School Form</h5>
+              <p class="text-center small">Enter your kind of school</p>
+            </div>
+
+            <form class="row mt-3 g-3 needs-validation" novalidate>
+              <div class="col-12 mb-3">
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">
+                    ကျောင်းအမျိုးအစား ...
+                  </option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.</div>
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-danger">Reset</button>
+              </div>
+              <div class="col-12">
+                <p class="small mb-0">
+                  Already have an account? <a href="pages-login.html">Log in</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+    </main>
     <!-- End NOmain -->
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">

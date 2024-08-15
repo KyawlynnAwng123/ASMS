@@ -410,11 +410,11 @@
             <div class="mb-2">
               <h5 class="card-title text-center pb-0 fs-4">Student Form</h5>
               <p class="text-center small">
-                Enter your personal details to create account
+                Enter your student form to create account
               </p>
             </div>
 
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row mt-3 g-3 needs-validation" novalidate>
               <div class="col-6 mt-3">
                 <input
                   type="text"
@@ -428,7 +428,7 @@
 
               <div class="col-6 mb-3">
                 <input
-                  type="text"
+                  type="number"
                   name="name"
                   class="form-control"
                   id="yourName"
@@ -439,10 +439,10 @@
 
               <div class="col-6 mb-3">
                 <input
-                  type="text"
+                  type="date"
                   name="name"
                   class="form-control"
-                  id="yourName"
+                  id="date"
                   placeholder="မွီးသက္ကရာဇ်"
                   required
                 />
@@ -485,7 +485,7 @@
 
               <div class="col-6 mb-3">
                 <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">သွီးအမျိုးအစား...</option>
+                  <option selected disabled value="">ကျောင်း...</option>
                   <option>...</option>
                 </select>
                 <div class="invalid-feedback">Please select a valid state.</div>
@@ -550,7 +550,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    yes
+                    ဟိ
                   </label>
                 </div>
                 <div class="form-check">
@@ -561,12 +561,12 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    No
+                    မဟိ
                   </label>
                 </div>
               </div>
 
-              <div class="col-12 mb-3">
+              <div class="col-6 mb-3">
                 <input
                   type="text"
                   name=""
@@ -575,6 +575,14 @@
                   placeholder="နီရပ်လိပ်စာ"
                   required
                 />
+              </div>
+
+              <div class="col-6 mb-3">
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">သွီးအမျိုးအစား  ...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.</div>
               </div>
 
               <div class="col-12 mb-3">
@@ -608,8 +616,11 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <button type="submit" class="btn btn-primary text-center">
-                  Add
+                <button type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+                <button type="submit" class="btn btn-danger">
+                  Reset
                 </button>
               </div>
               <div class="col-12">
