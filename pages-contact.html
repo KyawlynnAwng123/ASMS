@@ -571,9 +571,19 @@
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
+                <div class="col-6 mb-3">
+					<select class="form-select" id="validationCustom04" required>
+						<option selected disabled value="">Subjects...</option>
+						<option>...</option>
+					</select>
+					<div class="invalid-feedback">
+						Please select a valid state.
+					</div>
+				</div>
+
+				<div class="col-6">
+					<input type="file" name="" class="form-control">
+				</div>
 
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
