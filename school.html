@@ -22,14 +22,15 @@
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <!--  =======================================================
+    <!--    =======================================================
   * Template Name: NiceAdmin
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
   * Updated: Apr 20 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
-  ========================================================  -->
+  ========================================================    -->
   </head>
+
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
@@ -246,7 +247,7 @@
         </li>
         <li class="nav-heading">Pages</li>
         <li class="nav-item">
-          <a class="nav-link collapsed" href="school.html">
+          <a class="nav-link collapsed" href="">
             <i class="bi bi-house"></i>
             <span>Schools</span>
           </a>
@@ -319,10 +320,10 @@
     <main id="main" class="main">
       <div class="pagetitle">
         <h1>
-          lIST OF SCHOOLS &nbsp;
+          List Of Schools &nbsp;
           <i class="bi bi-house"></i>
-          <i class="bi bi-house"></i>
-          <i class="bi bi-house"></i>
+          <!--   <i class="bi bi-house"></i>
+                <i class="bi bi-house"></i>   -->
         </h1>
         <nav>
           <ol class="breadcrumb">
@@ -332,29 +333,45 @@
             <li class="breadcrumb-item">Pages</li>
             <li class="breadcrumb-item active">Schools</li>
           </ol>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add School</button>
+
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add School</button>
         </nav>
       </div>
 
-		<!-- schoolModal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h1 class="modal-title fs-5" id="exampleModalLabel">School Form</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-				</div>
-			</div>
-			</div>
-		</div>
-		<!-- end school modal -->
+    <!-- start modal add school -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add School</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3 form-floating">
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Township...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="mb-3 form-floating">
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">School...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Reset</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- end modal add school -->
+
       <!-- End Page Title -->
       <section class="section">
         <div class="row">
